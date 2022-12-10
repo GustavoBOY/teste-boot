@@ -150,12 +150,6 @@
  transform: skewX(-25deg) translateX(-15px);   
 }
 
-
-.content{
-	margin-top: 10%;
-	color: black;
-	text-align: center;
-}
 .mySlides img{
 	width: 50%;
 }

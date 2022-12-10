@@ -45,9 +45,9 @@
 .text {
   color: black;
   font-size: 26px;
-  padding: 8px 12px;
+  padding: 0 12px;
   position: absolute;
-  top: 8px;
+  bottom: 8px;
   width: 100%;
   text-align: center;
 }
