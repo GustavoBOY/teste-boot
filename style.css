@@ -14,8 +14,6 @@
 
 
 
-
-
 /* Menu Dropdown */
 .cf:before,
 .cf:after {
@@ -67,6 +65,7 @@
 }  
 
 .menu > li > a {
+	color: white;
  transform: skewX(-25deg);
  padding: 1em 2em;
 }
