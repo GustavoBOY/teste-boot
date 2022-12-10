@@ -4,30 +4,21 @@
 	color: black;
 	text-align: center;
 }
+.content h3{
+    font-size: 18px;
+}
 /* FontAwesome for working BootSnippet :> */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 #team {
     background: #eee !important;
 }
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
-    box-shadow: none;
-    outline: none;
-}
-.btn-primary {
-    color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
-}
 section {
     padding: 60px 0;
 }
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #085cbd;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
@@ -44,7 +35,7 @@ section .section-title {
     min-height: 312px;
 }
 .frontside .card .card-title {
-    color: #007b5e !important;
+    color: #085cbd !important;
 }
 .frontside .card .card-body img {
     width: 120px;
