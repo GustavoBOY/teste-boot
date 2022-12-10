@@ -1,0 +1,46 @@
+/****************EQUIPAMENTOS***************/
+*{
+    margin: 0;
+}
+.titulo{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+h4{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.container__equipamentos{
+    background-color: var(--cor-de-fundo2);
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.container__equipamentos img{
+    display:inline-block;
+    margin:2rem 1rem;
+    width:350px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.container__equipamentos img:after{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+.container__equipamentos img:hover{
+    transform:scale(1.15,1.15);
+}
+.container__equipamentos img:hover::after{
+    opacity:1;
+}
+hr{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 90%;
+    border: 1px solid black;
+}
