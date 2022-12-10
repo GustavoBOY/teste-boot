@@ -1,6 +1,6 @@
 
 .content{
-	margin-top: 10%;
+	margin-top: 12%;
 	color: black;
 	text-align: center;
 }
@@ -11,7 +11,7 @@
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 #team {
-    background: #eee !important;
+    background: rgb(240, 240, 240) !important;
 }
 section {
     padding: 60px 0;

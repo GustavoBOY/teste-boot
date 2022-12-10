@@ -61,11 +61,12 @@
 }  
 
 .menu li:hover {
+	
  background: #e74c3c;
 }  
 
 .menu > li > a {
-	color: white;
+color: white;
  transform: skewX(-25deg);
  padding: 1em 2em;
 }
@@ -86,7 +87,8 @@
 }      
 
 .submenu > li > a {
- padding: 1em 2em;   
+color: white;
+padding: 1em 2em;   
 }
 
 .submenu > li::after {
