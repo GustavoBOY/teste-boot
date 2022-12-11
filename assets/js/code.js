@@ -87,18 +87,18 @@ const equipamentos = [
 ]
 
 iniciarEquipamentos = () => {
-    var containerEquipamentos = document.getElementById('container__equipamentos');
-    equipamentos.map((val)=>{
+  var containerEquipamentos = document.getElementById('container__equipamentos');
+  equipamentos.map((val)=>{
 
-      containerEquipamentos.innerHTML+= 
-      `<div class="equipamento-single">
-        <h3 class="titulo">`+val.nome+`</h3>
-        <img src="`+val.img+`"/> 
-        <h4>`+val.processador+`</h4>
-        <h4>`+val.memoria+`</h4>
-        <hr></hr>
-      </div>`;
-    })
+    containerEquipamentos.innerHTML+= 
+    `<div class="equipamento-single">
+      <h3 class="titulo">`+val.nome+`</h3>
+      <img src="`+val.img+`"/> 
+      <h4>`+val.processador+`</h4>
+      <h4>`+val.memoria+`</h4>
+      <hr></hr>
+    </div>`;
+  })
 }
 
 iniciarEquipamentos();
