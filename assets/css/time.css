@@ -1,12 +1,11 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 .content{
-	margin-top: 12%;
-	color: black;
-	text-align: center;
+	margin-top: 7%;
 }
-.content h3{
-    font-size: 18px;
-}
+
 /* FontAwesome for working BootSnippet :> */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -32,13 +31,17 @@ section .section-title {
     margin-bottom: 30px;
 }
 .frontside .card {
-    min-height: 312px;
+    min-width: 260px;
+    min-height: 260px;
 }
 .frontside .card .card-title {
     color: #085cbd !important;
 }
 .frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
+    width: 14vh;
+    height: 14vh;
     border-radius: 50%;
+}
+.card-text{
+    font-weight: 600;
 }
