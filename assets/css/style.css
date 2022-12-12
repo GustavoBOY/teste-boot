@@ -67,6 +67,7 @@
 
 .menu > li > a {
 color: white;
+text-decoration: none;
  transform: skewX(-25deg);
  padding: 1em 2em;
 }
@@ -87,6 +88,7 @@ color: white;
 }      
 
 .submenu > li > a {
+text-decoration: none;
 color: white;
 padding: 1em 2em;   
 }
@@ -151,6 +153,3 @@ padding: 1em 2em;
  transform: skewX(-25deg) translateX(-15px);   
 }
 
-.mySlides img{
-	width: 50%;
-}

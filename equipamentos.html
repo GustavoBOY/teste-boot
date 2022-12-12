@@ -7,11 +7,12 @@
     <title>Equipamentos</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/equipamentos.css">
-     <!-- CSS only -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <!------ Include the above in your HEAD tag ---------->
+      <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
 </head>
 <body>
     <header>
@@ -26,22 +27,180 @@
                 <a href="#">Serviços</a>
             <ul class="submenu">
                 <li><a href="andares.html">Andares</a></li>
-                <li><a href="#">Patrimônios</a></li>
+                <li><a href="patrimonio.html">Patrimônios</a></li>
             </ul>
             </li>
             <li>
                 <a href="#">Administrador</a>
             <ul class="submenu">
                 <li><a href="login.html">Login</a></li>
-            </ul>
-            </li>
-    
+            </ul></li>
+
+            <li><a href="https://sites.google.com/alterdata.com.br/manuaisinfra/pagina-inicial">Manuais</a></li>
             <li><a href="https://www.karoo.com.br/chat/#/entrada?conta=136">Contato</a></li>
         </ul>
     
     </header>
     
-    <section class="container__equipamentos" id="container__equipamentos"></section>
+    <div class="container search-table">
+        <div class="search-box">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Pesquisar modelo</h5>
+                </div>
+                <div class="col-md-9">
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Modelo">
+                    <script>
+                         $(document).ready(function () {
+                            $("#myInput").on("keyup", function () {
+                                var value = $(this).val().toLowerCase();
+                                $("#myTable tr").filter(function () {
+                                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                });
+                            });
+                        });
+                    </script>
+                </div> 
+            </div>
+        </div>
+        <div class="search-list">
+            <h3>Modelos de equipamentos</h3>
+            <table class="table" id="myTable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Modelo</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/equipamentos/optiplex380.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 380</b></td>
+                    <td><b>Memória RAM:</b> DDR3 - Desktop <br> <b>Processador:</b> Intel® Core™2 Duo  <br> <b>Sistema operacional:</b> Windows 7</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/optiplex390.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 390</b></td>
+                    <td><b>Memória RAM:</b> DDR3 - Desktop <br> <b>Processador:</b> Intel i3-2120  <br> <b>Sistema operacional:</b> Windows 7</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/optiplex3010.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 3010</b></td>
+                    <td><b>Memória RAM:</b> DDR3 - Desktop <br> <b>Processador:</b> Intel i3-3220  <br> <b>Sistema operacional:</b> Windows 7 ou 8</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/mini20.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 3020 mini</b></td>
+                    <td><b>Memória RAM:</b> DDR3 - Notebook <br> <b>Processador:</b> Intel i3-4160T  <br> <b>Sistema operacional:</b> Windows 8</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/mini40.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 3040</b></td>
+                    <td><b>Memória RAM:</b> DDR4 - Notebook <br> <b>Processador:</b> Intel i3-6100T <br> <b>Sistema operacional:</b> Windows 10</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/mini50.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 3050</b></td>
+                    <td><b>Memória RAM:</b> DDR4 - Notebook <br> <b>Processador:</b> Intel i5-7500T  <br> <b>Sistema operacional:</b> Windows 10</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/mini60.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 3060</b></td>
+                    <td><b>Memória RAM:</b> DDR4 - Notebook <br> <b>Processador:</b> Intel i3-8100T  <br> <b>Sistema operacional:</b> Windows 10</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/mini20.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 3070</b></td>
+                    <td><b>Memória RAM:</b> DDR4 - Notebook <br> <b>Processador:</b> Intel i5-9500T  <br> <b>Sistema operacional:</b> Windows 10</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/mini80.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell OptiPlex 3080</b></td>
+                    <td><b>Memória RAM:</b> DDR4 - Notebook <br> <b>Processador:</b> Intel i5-10500T  <br> <b>Sistema operacional:</b> Windows 10</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/lenovom720q.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Lenovo ThinkCentre M720q</b></td>
+                    <td><b>Memória RAM:</b> DDR4 - Notebook <br> <b>Processador:</b> Intel i5-8500T  <br> <b>Sistema operacional:</b> Windows 10</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/lenovom93p.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Lenovo ThinkCentre M93p</b></td>
+                    <td><b>Memória RAM:</b> DDR3 - Notebook <br> <b>Processador:</b> Intel i5-4570T  <br> <b>Sistema operacional:</b> Windows 8</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                          <img src="assets/img/equipamentos/latitude3420.png" alt="" style="width: 200px; height: 200px"/>
+                        </div>
+                    </td>
+                    <td><b>Dell Latitude 3420</b></td>
+                    <td><b>Memória RAM:</b> DDR4 - Notebook <br> <b>Processador:</b> Intel i5-10500T <br> <b>Sistema operacional:</b> Windows 10</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
 
 
 

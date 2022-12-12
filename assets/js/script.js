@@ -1,28 +1,31 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+/*	gallery */
+$(document).ready(function(){
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  $(".filter-button").click(function(){
+      var value = $(this).attr('data-filter');
+      
+      if(value == "all")
+      {
+          $('.filter').show('1000');
+      }
+      else
+      {
+          $(".filter").not('.'+value).hide('3000');
+          $('.filter').filter('.'+value).show('3000');
+          
+      }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+          if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+      }
+        $(this).addClass("active");
+      });
+});
+/*	end gallery */
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+$(document).ready(function(){
+  $(".fancybox").fancybox({
+      openEffect: "none",
+      closeEffect: "none"
+  });
+});

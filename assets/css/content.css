@@ -1,83 +1,64 @@
 *{
-  box-sizing:border-box
+	padding:0;
+	margin:0;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin: auto;
-  margin-top: 10vh;
+/*	general	*/
+
+section{
+    padding: 60px 0;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+/*	gallery */
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin: -10%;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.gallery-title{
+    font-size: 36px;
+    color: #085cbd;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.filter-button{
+    font-size: 18px;
+    border: 2px solid rgb(108, 108, 108);
+	padding:5px 10px;
+    text-align: center;
+    color: #085cbd;
+    margin-bottom: 25px;
+	background:transparent;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(187, 187, 187, 0.8);
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active{
+    color: #ffffff;
+    background-color:#3F6184;
+	outline:none;
 }
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 26px;
-  padding: 0 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.gallery_product{
+  margin: 0px;
+	padding:0;
+	position:relative;
+}
+.gallery_product .img-info{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+	overflow:hidden;
+	color:#fff;
   text-align: center;
+	top:0;
+	display:none;
+	  -webkit-transition: 2s;
+    transition: 2s;
 }
 
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.gallery_product:hover .img-info{
+	display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+/*	end gallery */
