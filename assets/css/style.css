@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 html, body{
 	width: 100%;
@@ -23,10 +22,9 @@ html, body{
     .menu li a{
 		max-width: 120px;
 		font-size: 08px;
-    }
-
-    .hamb{
-        display: none;
+		color: white;
+		text-decoration: none;
+		border: none;
     }
 	.content{
 		font-size: 12px;
@@ -57,7 +55,7 @@ html, body{
 }
 
 .menu {   
- margin: 25px auto;
+ margin: 15px auto;
  width: 800px;   
  width: -moz-fit-content;
  width: -webkit-fit-content;
@@ -72,16 +70,16 @@ html, body{
 }
 
 .menu a {
+	
  display: block;
  color: #fff;
- text-transform: uppercase;
+ text-transform: capitalize;
  text-decoration: none;
  font-family: Arial, Helvetica;
  font-size: 14px;
 }  
 
 .menu li:hover {
-	
  background: #e74c3c;
 }  
 
@@ -116,7 +114,7 @@ padding: 1em 2em;
 .submenu > li::after {
  content: '';
  position: absolute;
- top: -125%;
+ top: -115%;
  height: 100%;
  width: 100%;   
  box-shadow: 0 0 50px rgba(0, 0, 0, .9);   
