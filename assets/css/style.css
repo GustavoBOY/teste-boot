@@ -1,6 +1,10 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
 }
 .logo{
 	justify-content: center; 
@@ -11,7 +15,23 @@
 .logo img{
 	margin-top: 1%;
 }
+@media screen and (max-width: 768px) {
+	html, body{
+		width: 100vw;
+		min-width: 410px;
+	}
+    .menu li a{
+		max-width: 120px;
+		font-size: 08px;
+    }
 
+    .hamb{
+        display: none;
+    }
+	.content{
+		font-size: 12px;
+	}
+ }
 
 
 /* Menu Dropdown */

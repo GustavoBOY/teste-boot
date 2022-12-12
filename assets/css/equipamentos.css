@@ -1,10 +1,15 @@
 /****************EQUIPAMENTOS***************/
 *{
     margin: 0;
+    padding: 0;
 }
 .search-table{
     padding: 10%;
     margin-top: -4.5%;
+}
+.search-table img{
+    width: 200px;
+    height: 200px;
 }
 .search-box{
 	color: white;
@@ -30,3 +35,12 @@
 .search-list td{
     vertical-align: middle;
 }
+@media screen and (max-width: 600px) {
+    .search-list h3, .search-list th, .search-list td{
+        font-size: 12px;
+    }
+    .search-table img{
+        width: 100px;
+        height: 100px;
+    }
+ }
