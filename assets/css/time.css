@@ -3,54 +3,62 @@
     margin: 0;
 }
 .content{
-	margin-top: 6.2%;
+	margin-top: 10.5%;
 }
 
 /* FontAwesome for working BootSnippet :> */
-
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-#team {
-    background: rgb(240, 240, 240) !important;
+.bootstrap{
+    margin-top:3.5%;
 }
-section {
-    padding: 60px 0;
-}
-section .section-title {
+.heading h2{
     text-align: center;
-    color: #085cbd;
-    margin-bottom: 50px;
-    text-transform: uppercase;
 }
-#team .card {
-    border: none;
-    background: #ffffff;
+.row{
+    justify-content: center;
 }
-.frontside {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 30px;
+.team{
+    border-top: 1px solid #e6e6e6;
+	padding-bottom: 60px;
 }
-.frontside .card {
-    min-width: 260px;
-    min-height: 260px;
+.panel-shadow{
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px 7px;
 }
-.frontside .card .card-title {
-    color: #085cbd !important;
+.team .team-member{
+	margin-top: 15%;
+	margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 0px 7px 0px;
 }
-.frontside .card .card-body img {
-    width: 14vh;
-    height: 14vh;
-    border-radius: 50%;
+.team .team-member img{
+    width: 80px;
+    height: 100px;
+    margin-right: 10px;
+	float: left;
+	border: 1px solid #f5f5f5;
+
 }
-.card-text{
-    font-weight: 600;
+
+.team .team-member .member-details{
+	margin-left: 65px;
 }
-@media screen and (max-width: 768px) {
-    section .section-title{
-        font-size: 24px;
-    }
-    .frontside .card .card-body img{
-        width: 16vh;
-        height: 16vh;
-    }
+
+.team .team-member .member-details h4{
+	margin: 0;
+	margin-bottom: 3px;
+	padding-top: 9px;
+	font-size: 18px;
+	font-weight: bold;
 }
+
+.team .team-member .member-details h4{
+	color: #145889;
+    text-decoration: none;
+}
+
+.team .team-member .member-details span{
+    
+	display: block;
+	margin-bottom: 2px;
+	font-size: 12px;
+	color: #000000;
+    font-weight: bold;
+}			              

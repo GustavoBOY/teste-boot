@@ -17,17 +17,17 @@ html, body{
 @media screen and (max-width: 768px) {
 	html, body{
 		width: 100vw;
-		min-width: 410px;
+		min-width: 268px;
 	}
     .menu li a{
-		max-width: 120px;
-		font-size: 08px;
+		max-width: 368px;
+		font-size: 2vw;
 		color: white;
 		text-decoration: none;
 		border: none;
     }
-	.content{
-		font-size: 12px;
+	.card-text{
+		font-size: 2.2vw;
 	}
  }
 
