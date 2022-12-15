@@ -13,7 +13,7 @@
 }
 .search-box{
 	color: white;
-    background:  rgb(36, 36, 36);
+    background:  rgba(36, 36, 36, 0.7);
     padding: 3%;
 }
 .search-box input:focus{

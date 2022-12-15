@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!------ Include the above in your HEAD tag ---------->
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54ffcf3ed5.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -31,36 +31,73 @@
                 <li><a href="andares.html">Andares</a></li>
                 <li><a href="patrimonio.html">Patrimônios</a></li>
             </ul>
-            </li>
-            <li><a href="#">Administrador</a></li>
 
             <li><a href="https://sites.google.com/alterdata.com.br/manuaisinfra/pagina-inicial">Manuais</a></li>
             <li><a href="https://www.karoo.com.br/chat/#/entrada?conta=136">Contato</a></li>
+            </li>
+           
         </ul>
     
     </header>
 
-    <section class="portfolio" id="portfolio">
-        <div class="container-fluid">
-            <div class="row">
+    <div class="container">
+        <!--  Introduction  -->
+        <h1 class="title">Mapeamento de PA</h1>
+        <!--  Search Bar  -->
+        <div class="form-control">
+          <label for="search"><i class="icon-search"></i></label>
+          <input class="table-filter" type="search" data-table="advanced-web-table" placeholder="Pesquisa">
+        </div>
+        <!--  Table  -->
+        <div class="table-responsive">
+          <table id="ordering-table" class="advanced-web-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>PA</th>
+                <th>PAT</th>
+                <th>MON</th>
+                <th>Andar</th>
+                <th>Colaborador</th>
+                <th>Opções</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>400A</td>
+                <td>2020</td>
+                <td>317</td>
+                <td>3º andar</td>
+                <td>Andre.teste</td>
+                <td class="opcao"><button><i class="fa-solid fa-pen"></i></button> <button><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>300B</td>
+                <td>2021</td>
+                <td>458</td>
+                <td>4º andar</td>
+                <td>Gustavo.teste</td>
+                <td class="opcao"><button><i class="fa-solid fa-pen"></i></button> <button><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>585c</td>
+                <td>2022</td>
+                <td>500</td>
+                <td>5º andar</td>
+                <td>Victor.teste</td>
+                <td class="opcao"><button><i class="fa-solid fa-pen"></i></button> <button><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
     
-                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="gallery-title">Andares</h1>
-                </div>
-    
-                <input type="search" name="" id="">
-                <label for="andares">Escolha o andar:</label>
-                <select id="andares">
-                    <option value="All" class="filter-button" data-filter="all">All</option>
-                    <option value="andar3" class="filter-button" data-filter="andar3">3º andar</option>
-                    <option value="andar4" class="filter-button" data-filter="andar4">4º andar</option>
-                    <option value="andar5" class="filter-button" data-filter="andar5">5º andar</option>
-                    <option value="andar6" class="filter-button" data-filter="andar6">6º andar</option>
-                    <option value="andar7" class="filter-button" data-filter="andar7">7º andar</option>
-                </select>
-    </section>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-        <script src="../../js/script.js"></script>
+        <script src="../../js/search.js"></script>
 </body>
 </html>
