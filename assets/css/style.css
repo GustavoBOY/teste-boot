@@ -14,11 +14,8 @@ html, body{
 .logo img{
 	margin-top: 1%;
 }
-@media screen and (max-width: 768px) {
-	html, body{
-		width: 100vw;
-		min-width: 268px;
-	}
+@media screen and ( max-width: 768px) { 
+
     .menu li a{
 		max-width: 368px;
 		font-size: 2vw;
@@ -27,7 +24,11 @@ html, body{
 		border: none;
     }
 	.card-text{
-		font-size: 2.2vw;
+		width: auto;
+		font-size: small;
+	}
+	.card-body > h3{
+		margin-top:15%;
 	}
  }
 
