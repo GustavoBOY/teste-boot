@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css.map">
     <link rel="stylesheet" href="assets/css/time.css">
-    <link rel="stylesheet" href="style.css.map">
-
     
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-   
+   <script src="https://cdn.jsdelivr.net/npm/resize-observer-polyfill@1.5.1/dist/ResizeObserver.min.js"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -22,55 +18,72 @@
     <!------ Include the above in your HEAD tag ---------->
 
 </head>
-<body>
- 
-  <div class="container">
-  <div class="floater">
-    <ul class="floater__list">
-      <li class="floater__list-item">
-        <div class="floater__list-item-label">Milestone Goal</div>
-        
-
-<svg width="26px" height="26px" viewBox="666 -86 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(666.000000, -86.000000)">
-        <path d="M1.44444444,7.02981625 L1.44444444,21.5639338 C1.44444444,22.8562845 2.52250308,23.90625 3.85037916,23.90625 L22.1496208,23.90625 C23.4770725,23.90625 24.5555556,22.8566977 24.5555556,21.5639338 L24.5555556,7.02981625 C24.5555556,5.73746549 1.44444444,5.73705227 1.44444444,7.02981625 Z M0,3.74856625 C0,1.67829027 1.72606809,0 3.85037916,0 L22.1496208,0 C24.2761265,0 26,1.68042687 26,3.74856625 L26,21.5639338 C26,23.6342097 24.2739319,25.3125 22.1496208,25.3125 L3.85037916,25.3125 C1.72387347,25.3125 0,23.6320731 0,21.5639338 L0,3.74856625 Z" id="Combined-Shape" fill="#FFFFFF"></path>
-        <polygon id="Path" fill="#FFFFFF" points="5.11281222 15.1050447 9.86412384 20.8614415 21.2072996 10.5097954 18.3463765 8.203125 10.749346 15.4210298 7.84534433 12.2852327"></polygon>
-    </g>
-</svg>
-      </li>
-      <li class="floater__list-item">
-        <div class="floater__list-item-label">Metric Goal</div>
-        
-<svg width="26px" height="26px" viewBox="666 -41 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(666.000000, -41.000000)">
-        <path d="M1.44444444,7.02981625 L1.44444444,21.5639338 C1.44444444,22.8562845 2.52250308,23.90625 3.85037916,23.90625 L22.1496208,23.90625 C23.4770725,23.90625 24.5555556,22.8566977 24.5555556,21.5639338 L24.5555556,7.02981625 C24.5555556,5.73746549 1.44444444,5.73705227 1.44444444,7.02981625 Z M0,3.74856625 C0,1.67829027 1.72606809,0 3.85037916,0 L22.1496208,0 C24.2761265,0 26,1.68042687 26,3.74856625 L26,21.5639338 C26,23.6342097 24.2739319,25.3125 22.1496208,25.3125 L3.85037916,25.3125 C1.72387347,25.3125 0,23.6320731 0,21.5639338 L0,3.74856625 Z" id="Combined-Shape" fill="#FFFFFF"></path>
-        <path d="M10.7389071,19.5002919 L14.9168403,14.6181972 L18.000806,16.5907539 L22.7314831,11.3774532 C23.0780574,10.9955215 23.0409852,10.4123797 22.6486799,10.0749696 C22.2563747,9.73755952 21.6573945,9.77365151 21.3108202,10.1555833 L17.6681918,14.1698324 L14.5435276,12.1712443 L10.4132458,16.9976563 L7.72836147,15.1151796 L3.16868236,19.5255071 C2.79733371,19.8846923 2.79538179,20.4689468 3.16432261,20.8304762 C3.53326343,21.1920055 4.13338661,21.1939058 4.50473525,20.8347206 L7.9244808,17.5269884 L10.7389071,19.5002919 Z" id="Combined-Shape" fill="#FFFFFF"></path>
-    </g>
-</svg>
-      </li>
-      <li class="floater__list-item">
-        <div class="floater__list-item-label">Goal Board</div>
-<svg width="26px" height="28px" viewBox="666 7 26 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Group-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(666.000000, 8.687500)">
-        <path d="M0,3.74856625 C0,1.67829027 1.72606809,-6.66133815e-15 3.85037916,-6.66133815e-15 L22.1496208,-6.66133815e-15 C24.2761265,-6.66133815e-15 26,1.68042687 26,3.74856625 L26,21.5639338 C26,23.6342097 24.2739319,25.3125 22.1496208,25.3125 L3.85037916,25.3125 C1.72387347,25.3125 0,23.6320731 0,21.5639338 L0,3.74856625 Z M1.44444444,7.02981625 L1.44444444,21.5639338 C1.44444444,22.8562845 2.52250308,23.90625 3.85037916,23.90625 L22.1496208,23.90625 C23.4770725,23.90625 24.5555556,22.8566977 24.5555556,21.5639338 L24.5555556,7.02981625 C24.5555556,5.73746549 1.44444444,5.73705227 1.44444444,7.02981625 Z M2.88888889,18.75 L23.1111111,18.75 L23.1111111,20.625 C23.1111111,21.6605339 22.2679332,22.5 21.2449002,22.5 L4.75509983,22.5 C3.72441999,22.5 2.88888889,21.6677535 2.88888889,20.625 L2.88888889,18.75 Z M2.88888889,7.96875 C13,6.72225952 23.1111111,7.96875 23.1111111,7.96875 L23.1111111,11.71875 L2.88888889,11.71875 L2.88888889,7.96875 Z M2.88888889,13.125 L23.1111111,13.125 L23.1111111,17.34375 L2.88888889,17.34375 L2.88888889,13.125 Z" id="Combined-Shape" fill="#FFFFFF"></path>
-    </g>
-</svg>
-      </li>
-    </ul>
-    <div class="floater__btn">
-      
-<svg class="floater__btn-icon floater__btn-icon-plus" width="24px" height="24px" viewBox="672 53 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
-    <defs></defs>
-    <path d="M687,62 L687,54.0006946 C687,53.4474692 686.556414,53 686.009222,53 L681.990778,53 C681.450975,53 681,53.4480262 681,54.0006946 L681,62 L673.000695,62 C672.447469,62 672,62.4435864 672,62.990778 L672,67.009222 C672,67.5490248 672.448026,68 673.000695,68 L681,68 L681,75.9993054 C681,76.5525308 681.443586,77 681.990778,77 L686.009222,77 C686.549025,77 687,76.5519738 687,75.9993054 L687,68 L694.999305,68 C695.552531,68 696,67.5564136 696,67.009222 L696,62.990778 C696,62.4509752 695.551974,62 694.999305,62 L687,62 Z" id="Combined-Shape" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
-</svg>
-
+<body >
+  <div class="MobileNav" data-mobile-nav>
+    <div class="MobileNav-overlay" data-mobile-nav-overlay></div>
+    <div class="MobileNav-inner">
+      <div class="MobileNav-trigger" data-mobile-nav-trigger>
+        <div class="MobileNav-trigger-inner"></div>
+      </div>
+      <ul class="MobileNav-nav" data-mobile-nav-list>
+        <li class="MobileNav-item" data-mobile-nav-item="1">
+          <div class="MobileNav-item-title">
+            <a href="#">Página inicial</a>
+          </div>
+        </li>
+        <li class="MobileNav-item" data-mobile-nav-item="2">
+          <div class="MobileNav-item-title">
+            <a href="#">Andares</a>
+          </div>
+        </li>
+        <li class="MobileNav-item" data-mobile-nav-item="3">
+          <div class="MobileNav-item-title">
+            <a href="#">Equipamentos</a>
+          </div>
+        </li>
+        <li class="MobileNav-item" data-mobile-nav-item="4">
+          <div class="MobileNav-item-title">
+            <a href="#">Patrimônio</a>
+          </div>
+        </li>
+        <li class="MobileNav-item" data-mobile-nav-item="5">
+          <div class="MobileNav-item-title">
+            <a href="#">Manuais</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+  
+  <header class="Header" data-header>
+    <div class="Header-inner" data-header-nav>
+      <div class="logo">
+        <img src="assets/img/logo/logo_alterdata_software-05.svg" alt="">
+      </div>
+      <nav class="Header-nav" data-nav>
+        <div class="Header-nav-item" data-nav-item="1">
+          <a href="#">Página inicial</a>
+        </div>
+        <div class="Header-nav-item" data-nav-item="2">
+          <a href="#">Andares</a>
+        </div>
+        <div class="Header-nav-item" data-nav-item="3">
+          <a href="#">Equipamentos</a>
+        </div>
+        <div class="Header-nav-item" data-nav-item="4">
+          <a href="#">Patrimônio</a>
+        </div>
+        <div class="Header-nav-item" data-nav-item="5">
+          <a href="#">Manuais</a>
+        </div>
+      </nav>
+      <button class="MobileNav-trigger" data-mobile-nav-trigger>
+        <div class="MobileNav-trigger-inner"></div>
+      </button>
+    </div>
+  </header>
 
-
-    <section class="main">
+  <section class="main">
         <div class="card-body text-center">
             <h3 class="card-title">O que fazemos?</h3>
         <br>
