@@ -18,7 +18,7 @@
     color: white;
   }
   .card-body{
-    margin-top: 20vh;
+    margin-top: 150px;
   }
   
 .Header {
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   transition: height 0.4s ease;
-  width: 80vw;
+  width: 90vw;
 }
 .Header .logo {
   align-self: center;
@@ -53,7 +53,7 @@
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 100%;
+  width: 150px;
 }
 .Header-nav {
   display: flex;
@@ -76,7 +76,7 @@
   font-weight: bold;
   height: 100%;
   line-height: 32px;
-  margin: 0 40px;
+  margin: 0 20px;
   transition: font-size 0.4s ease, padding 0.4s ease;
 }
 .Header-nav-item:last-child {
@@ -90,7 +90,13 @@
   color: darkblue !important;
 }
 .Header-nav:hover .Header-nav-item {
-  color: rgba(0, 0, 139, 0.5);
+  color:darkblue;
+}
+.Header-nav-item a:hover{
+  color: #f54734;
+}
+.MobileNav a:hover{
+  color: #f54734;
 }
 @media screen and (min-width: 481px) {
   .Header-nav {
@@ -126,7 +132,7 @@
   z-index: 9;
 }
 .MobileNav-inner {
-  background: white;
+  background: #253647;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -152,7 +158,7 @@
   top: 30px;
 }
 .MobileNav-item {
-  color: navy;
+  color: rgb(0, 0, 0);
   display: none;
   font-family: Lato, sans-serif;
   font-size: 24px;
@@ -170,7 +176,7 @@
 }
 .MobileNav-item-title a {
   margin-top: 10%;
-  color: black;
+  color: white;
   flex-shrink: 0;
   text-decoration: none;
 }
@@ -180,8 +186,8 @@
   width: 100%;
 }
 .MobileNav-item-title span::after {
-  border-left: 2px solid lightgray;
-  border-top: 2px solid lightgray;
+  border-left: 2px solid rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 255, 255);
   content: "";
   display: block;
   height: 14px;
@@ -216,9 +222,9 @@
   width: 24px;
 }
 .MobileNav-trigger-inner::after {
-  background: #Fff;
+  background: rgb(255, 255, 255);
   content: "";
-  height: 2px;
+  height: 3px;
   left: 0;
   position: absolute;
   top: 0;
@@ -227,10 +233,10 @@
   width: 100%;
 }
 .MobileNav-trigger-inner::before {
-  background: white;
+  background: rgb(255, 255, 255);
   bottom: 0;
   content: "";
-  height: 2px;
+  height: 3px;
   left: 0;
   position: absolute;
   transform-origin: 0% 50%;
@@ -264,6 +270,11 @@
 @media screen and (min-width: 871px) {
   .MobileNav-inner {
     padding-top: 160px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .card-body{
+    margin-top: 150px;
   }
 }
 
