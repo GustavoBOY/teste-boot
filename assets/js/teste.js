@@ -1,15 +1,10 @@
-var clients = document.getElementById('clients');
+var $floater = $('.floater');
 
-clients.addEventListener('click', function() {
-  $(clients).toggleClass("active");
-  $(".parent:not(#clients)").toggleClass("invisible");
-}, false);
+$floater.on('click', function(e) {
+  $floater.toggleClass('is-active');
+  e.stopPropagation();
+});
 
-document.addEventListener('DOMContentLoaded', nav)
-function nav(){
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.navigationWrapper');
-    burger.addEventListener('click', ()=>{
-        nav.classList.toggle('show')
-    })
-}
+$('.container').on('click', function() {
+  $floater.removeClass('is-active');
+});
