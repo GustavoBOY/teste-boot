@@ -6,83 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/style.css.map">
     <link rel="stylesheet" href="../../css/andares.css">
     
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-     <!-- CSS only -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    
-<!------ Include the above in your HEAD tag ---------->
+<!-- Font Awesome -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<!-- Google Font -->
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <!-- CSS only -->
+  
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <!------ Include the above in your HEAD tag ---------->
 
    
 </head>
 <body>
-  <div class="MobileNav" data-mobile-nav>
-    <div class="MobileNav-overlay" data-mobile-nav-overlay></div>
-    <div class="MobileNav-inner">
-      <div class="MobileNav-trigger" data-mobile-nav-trigger>
-        <div class="MobileNav-trigger-inner"></div>
+  <div class="nav" id="nav">
+    <nav class="nav__content">
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-chevron-right' ></i>
       </div>
-      <ul class="MobileNav-nav" data-mobile-nav-list>
-        <li class="MobileNav-item" data-mobile-nav-item="1">
-          <div class="MobileNav-item-title">
-            <a href="../../../index.html">Página inicial</a>
-          </div>
-        </li>
-        <li class="MobileNav-item" data-mobile-nav-item="2">
-          <div class="MobileNav-item-title">
-            <a href="../pages/equipamentos.html">Equipamentos</a>
-          </div>
-        </li>
-        <li class="MobileNav-item" data-mobile-nav-item="3">
-          <div class="MobileNav-item-title">
-            <a href="../pages/patromonio.html">Patrimônio</a>
-          </div>
-        </li>
-        <li class="MobileNav-item" data-mobile-nav-item="4">
-          <div class="MobileNav-item-title">
-            <a href="https://sites.google.com/alterdata.com.br/manuaisinfra/Infra">Manuais</a>
-          </div>
-        </li>
-        <li class="MobileNav-item" data-mobile-nav-item="5">
-          <div class="MobileNav-item-title">
-            <a href="https://www.karoo.com.br/chat/#/entrada?conta=136">Contato</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+      <a href="#" class="nav__logo">
+      <i class='bx bxs-building' ></i>
+      <span class="nav__logo-name">Infraestrutura</span>
+      </a>
+      <div class="nav__list">
+        <a href="assets/src/pages/andares.html" class="nav__link active-link">
+        <i class='bx bx-building'></i>
+        <span class="nav__name">Andares</span>
+        </a>
+        <a href="assets/src/pages/equipamentos.html" class="nav__link">
+        <i class='bx bx-desktop'></i>
+        <span class="nav__name">Equipamentos</span>
+        </a>
+        <a href="assets/src/pages/patromonio.html" class="nav__link">
+        <i class='bx bx-edit' ></i>
+        <span class="nav__name">Patrimônio</span>
+        </a>
+        <a href="https://sites.google.com/alterdata.com.br/manuaisinfra/Infra" class="nav__link">
+        <i class='bx bx-book' ></i>
+        <span class="nav__name">Manuais</span>
+        </a>
+        <a href="https://www.karoo.com.br/chat/#/entrada?conta=136" class="nav__link">
+        <i class='bx bx-envelope' ></i>
+        <span class="nav__name">Contato</span>
+        </a>
+      </div>
+    </nav>
   </div>
-  
-  <header class="Header" data-header>
-    <div class="Header-inner" data-header-nav>
-      <div class="logo">
-        <img src="../../img/logo/logo_alterdata_software-05.svg" alt="">
-      </div>
-      <nav class="Header-nav" data-nav>
-        <div class="Header-nav-item" data-nav-item="1">
-          <a href="../../../index.html">Página inicial</a>
-        </div>
-        <div class="Header-nav-item" data-nav-item="2">
-          <a href="../pages/equipamentos.html">Equipamentos</a>
-        </div>
-        <div class="Header-nav-item" data-nav-item="3">
-          <a href="../pages/patromonio.html">Patrimônio</a>
-        </div>
-        <div class="Header-nav-item" data-nav-item="4">
-          <a href="https://sites.google.com/alterdata.com.br/manuaisinfra/Infra">Manuais</a>
-        </div>
-        <div class="Header-nav-item" data-nav-item="5">
-          <a href="https://www.karoo.com.br/chat/#/entrada?conta=136">Contato</a>
-        </div>
-      </nav>
-      <button class="MobileNav-trigger" data-mobile-nav-trigger>
-        <div class="MobileNav-trigger-inner"></div>
-      </button>
-    </div>
-  </header>
 
   <section class="gallery">
     <div class="container">
