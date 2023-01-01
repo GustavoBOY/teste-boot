@@ -15,7 +15,7 @@
 	h1 {
 	width: 100%;
 	text-align: center;
-	font-size: 3.5em;
+	font-size: 3em;
 	color: #1f003b;
 	}
 	.card {
@@ -30,13 +30,15 @@
 	.card .img-container {
 	width: 8em;
 	height: 8em;
-	background-color: #a993ff;
-	padding: 0.5em;
+	background-color: #449bf8;
+	padding: 0.3em;
 	border-radius: 50%;
 	margin: 0 auto 2em auto;
+	object-fit: cover;
 	}
 	.card img {
 	width: 100%;
+	height: 100%;
 	border-radius: 50%;
 	}
 	.card h3 {
@@ -51,9 +53,9 @@
 	.icons {
 	width: 50%;
 	min-width: 180px;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
+	margin: 0 auto;
+	/* display: flex;
+	justify-content: space-between; */
 	}
 	.card a {
 	text-decoration: none;
@@ -61,11 +63,11 @@
 	font-size: 1.4em;
 	}
 	.card:hover {
-	background: linear-gradient(#6045ea, #8567f7);
+	background: linear-gradient(#588eeb, #3b18ee);
 	color: #ffffff;
 	}
 	.card:hover .img-container {
-	transform: scale(1.15);
+	transform: scale(1.25);
 	}
 	@media screen and (min-width: 768px) {
 	section {
@@ -82,6 +84,6 @@
 	.column {
 		flex: 0 0 33.33%;
 		max-width: 33.33%;
-		padding: 0 1em;
+		padding: 0 1.2em;
 	}
 	}

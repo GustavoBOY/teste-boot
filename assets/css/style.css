@@ -38,7 +38,7 @@
 /* Responsive typography */
 @media screen and (min-width: 968px) {
   :root {
-    --normal-font-size: 1rem;
+    --normal-font-size: 0.8rem;
   }
 }
 /*=============== BASE ===============*/
@@ -57,16 +57,23 @@ a {
   text-decoration: none;
 }
 /*=============== NAV ===============*/
-.teste {
+.information {
+
   text-align: center;
   justify-content: center;
   margin: 0 auto;
   padding-top: 30px;
-  font-size: 20px;
+  margin: 0vw 10vw 0vw 15vw;
+  font-size: 19px;
 }
-.teste2{
-  margin: 0vw 10vw 0vw 10vw;
-  margin-top: 40px;
+.information_two img{
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.information_two h3{
+  color: black; 
+  font-weight: bold;
 }
 @media screen and (max-width: 767px) {
   .nav__logo, 
